@@ -16,22 +16,15 @@ along with the **correlation coefficient** $r$.
   - Delete specific data points or the most recent entry.
   - **Triple-click to clear all data.**
 - **📊 Logarithmic Regression Calculation**
-  - Computes **best-fit parameters** \( a \) and \( b \) using least-squares regression.
+  - Computes best-fit parameters $a$ and $b$ using least-squares regression.
   - Uses the formula:  
-    $$
-    y = a \ln{x} + b
-    $$
-  - Computes **correlation coefficient** \( r \), which measures the fit quality:
-    $$
-    r = \frac{n \sum (\ln{x_i} y_i) - \sum \ln{x_i} \sum y_i}{\sqrt{[n \sum (\ln{x_i})^2 - (\sum \ln{x_i})^2][n \sum y_i^2 - (\sum y_i)^2]}}
-    $$
+    $$ y = a \ln{x} + b $$
+   - Computes the correlation coefficient $r$, which measures the fit quality:
+    $$ r = \frac{n \sum (\ln{x_i} \, y_i) - \sum \ln{x_i} \sum y_i}{\sqrt{\left[n \sum (\ln{x_i})^2 - \left(\sum \ln{x_i}\right)^2\right]\left[n \sum y_i^2 - \left(\sum y_i\right)^2\right]}} $$
   - Displays key computed values:
-    - **Regression equation**:  
-      $$
-      y = a \ln{x} + b
-      $$
-    - **Regression coefficient**: \( r \)
-    - **Computed values**: \( a \) and \( b \)
+    - Regression equation: $y = a \ln{x} + b$
+    - Regression coefficient: $r$
+    - Computed values: $a$ and $b$
 - **🎨 User-Friendly Interface**
   - Intuitive UI for easy data entry and modifications.
   - Buttons for adding, editing, clearing, and running regression calculations.
