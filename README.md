@@ -11,6 +11,24 @@ y = a \ln x + b
 along with the **correlation coefficient \( r \)**.
 
 ## 🚀 Features  
+- **📥 Data Input**
+  - Enter multiple \( (x, y) \) data pairs.
+- **🔢 Data Management**
+  - Modify existing data entries.
+  - Delete specific data points or the most recent entry.
+  - **Triple-click to clear all data.**
+- **📊 Logarithmic Regression Calculation**
+  - Computes the **best-fit parameters** \( a \) and \( b \) using least-squares regression.
+  - Computes the **correlation coefficient** \( r \), which measures the fit quality.
+  - Displays:
+    - **Regression equation**: \( y = a \ln x + b \)
+    - **Regression coefficient** \( r \)
+    - **Computed values** \( a \) and \( b \)
+- **🎨 User-Friendly Interface**
+  - Intuitive UI for easy data entry and modifications.
+  - Buttons for adding, editing, clearing, and running regression calculations.
+
+## 🚀 Features  
 - 📊 **Logarithmic Curve Fitting** – Computes the best-fit logarithmic equation.
 - 🔢 **Dynamic Data Input** – Enter, update, or delete data points easily.
 - 🛠 **Regression Formula Display** – Shows the final logarithmic equation.
