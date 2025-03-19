@@ -18,9 +18,9 @@ along with the **correlation coefficient** $r$.
 - **📊 Logarithmic Regression Calculation**
   - Computes **best-fit parameters** $a$ and $b$ using least-squares regression.
   - Uses the formula:  
-    $$ y = a \ln{x} + b $$
+    $ y = a \ln{x} + b $
   - Computes **correlation coefficient** $r$, which measures the fit quality:
-    $$ r = \frac{n \sum (\ln{x_i} y_i) - \sum \ln{x_i} \sum y_i}{\sqrt{[n \sum (\ln{x_i})^2 - (\sum \ln{x_i})^2][n \sum y_i^2 - (\sum y_i)^2]}} $$
+    $ r = \frac{n \sum (\ln{x_i} y_i) - \sum \ln{x_i} \sum y_i}{\sqrt{[n \sum (\ln{x_i})^2 - (\sum \ln{x_i})^2][n \sum y_i^2 - (\sum y_i)^2]}} $
   - Displays key computed values:
     - **Regression equation**: $ y = a \ln{x} + b $
     - **Regression coefficient**: $ r $
