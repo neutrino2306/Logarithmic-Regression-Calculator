@@ -2,28 +2,29 @@
  
 ## 📌 Project Overview  
 Logarithmic Regression Calculator is a mobile application designed to perform **logarithmic regression analysis** for a given set of data points.  
-Users can input paired \( (x, y) \) values, and the app will compute the **best-fit logarithmic equation** of the form:
+Users can input paired $(x, y)$ values, and the app will compute the **best-fit logarithmic equation** of the form:
 
-\[
-y = a \ln x + b
-\]
+$$ y = a \ln{x} + b $$
 
-along with the **correlation coefficient \( r \)**.
+along with the **correlation coefficient** $r$.
 
 ## 🚀 Features  
 - **📥 Data Input**
-  - Enter multiple \( (x, y) \) data pairs.
+  - Enter multiple $(x, y)$ data pairs.
 - **🔢 Data Management**
   - Modify existing data entries.
   - Delete specific data points or the most recent entry.
   - **Triple-click to clear all data.**
 - **📊 Logarithmic Regression Calculation**
-  - Computes the **best-fit parameters** \( a \) and \( b \) using least-squares regression.
-  - Computes the **correlation coefficient** \( r \), which measures the fit quality.
-  - Displays:
-    - **Regression equation**: \( y = a \ln x + b \)
-    - **Regression coefficient** \( r \)
-    - **Computed values** \( a \) and \( b \)
+  - Computes **best-fit parameters** $a$ and $b$ using least-squares regression.
+  - Uses the formula:  
+    $$ y = a \ln{x} + b $$
+  - Computes **correlation coefficient** $r$, which measures the fit quality:
+    $$ r = \frac{n \sum (\ln{x_i} y_i) - \sum \ln{x_i} \sum y_i}{\sqrt{[n \sum (\ln{x_i})^2 - (\sum \ln{x_i})^2][n \sum y_i^2 - (\sum y_i)^2]}} $$
+  - Displays key computed values:
+    - **Regression equation**: $ y = a \ln{x} + b $
+    - **Regression coefficient**: $ r $
+    - **Computed values**: $ a $ and $ b $
 - **🎨 User-Friendly Interface**
   - Intuitive UI for easy data entry and modifications.
   - Buttons for adding, editing, clearing, and running regression calculations.
