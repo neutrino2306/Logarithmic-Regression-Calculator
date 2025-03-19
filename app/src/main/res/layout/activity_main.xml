@@ -1,0 +1,684 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/addPoint"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/input_x"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/green"
+        android:hint="@string/Xhint"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/input_y"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/green"
+        android:hint="@string/Yhint"
+        android:inputType="numberSigned|numberDecimal" />
+    <Button
+
+        android:id="@+id/btn_add"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@drawable/btn_delete_specific_selector"
+        android:text="@string/addBtn" />
+
+    <TextView
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/editData"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edit_num"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginTop="160dp"
+        android:background="@color/bgc"
+        android:gravity="center"
+        android:hint="@string/editHint2"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <EditText
+        android:id="@+id/edit_x"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="205dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/edit"
+        android:gravity="center"
+        android:hint="@string/editXHint"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLength="12" />
+
+    <EditText
+        android:id="@+id/edit_y"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/edit"
+        android:gravity="center"
+        android:hint="@string/editYHint"
+        android:inputType="numberSigned|numberDecimal"
+        android:maxLength="12" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="@color/blue_press"
+        android:text="@string/reset" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="@color/blue_press"
+        android:text="@string/change" />
+
+    <TextView
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="330dp"
+        android:text="@string/deleteData"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/del_num"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="360dp"
+        android:background="@color/bgc"
+        android:gravity="center"
+        android:hint="@string/editHint2"
+        android:inputType="number"
+        android:maxLength="2" />
+
+    <Button
+        android:id="@+id/btn_delete_recent"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="420dp"
+        android:backgroundTint="@drawable/btn_delete_recent_selector"
+        android:text="@string/deleteRecentData" />
+
+    <Button
+        android:id="@+id/btn_delete_specific"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="475dp"
+        android:backgroundTint="@drawable/btn_delete_recent_selector"
+        android:text="@string/deleteSpecificData" />
+
+    <Button
+        android:id="@+id/btn_delete_all"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="530dp"
+        android:backgroundTint="@drawable/btn_delete_all_selector"
+        android:text="@string/deleteAll"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="360dp"
+        android:gravity="center"
+        android:text="@string/formula"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_exe"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="410dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="@string/exe"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="470dp"
+        android:text="@string/r"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/disp_r"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="525dp"
+        android:background="@color/bgc"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/a"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/disp_a"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="600dp"
+        android:background="@color/bgc"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="660dp"
+        android:layout_marginStart="35dp"
+        android:text="@string/b"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/disp_b"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="660dp"
+        android:background="@color/bgc"
+        android:textIsSelectable="true" />
+    <GridLayout
+        android:id="@+id/xy"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:background="@color/title_blue">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="@string/data"
+            android:textStyle="bold" />
+
+        
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/xy">>
+
+        <GridLayout
+            android:layout_width="200dp"
+            android:layout_height="2000dp"
+            android:layout_below="@+id/xy"
+            android:background="#37D8CEEF"><![CDATA[>
+
+        ]]>
+
+
+
+            <TextView
+                android:id="@+id/point1"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="0"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+
+                android:id="@+id/point2"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="1"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point3"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="2"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point4"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="3"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point5"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="4"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point6"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="5"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point7"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="6"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point8"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="7"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point9"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="8"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point10"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="9"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point11"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="10"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point12"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="11"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point13"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="12"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point14"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="13"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point15"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="14"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point16"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="15"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point17"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="16"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point18"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="17"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point19"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="18"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point20"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="19"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point21"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="20"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point22"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="21"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point23"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="22"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point24"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="23"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point25"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="24"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point26"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="25"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point27"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="26"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point28"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="27"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point29"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="28"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point30"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="29"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point31"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="30"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point32"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="31"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point33"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="32"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point34"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="33"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point35"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="34"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point36"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="35"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point37"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="36"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point38"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="37"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point39"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="38"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point40"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="39"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point41"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="40"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point42"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="41"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point43"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="42"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point44"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="43"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point45"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="44"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point46"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="45"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point47"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="46"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point48"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="47"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point49"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="48"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/point50"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_row="49"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+        </GridLayout>
+    </ScrollView>
+    <![CDATA[
+
+
+
+
+   />
+
+
+]]>
+
+
+
+</RelativeLayout>
