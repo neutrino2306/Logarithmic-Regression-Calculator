@@ -1,6 +1,14 @@
 ﻿# Logarithmic-Regression-Calculator
  
 ## 📌 Project Overview  
+Logarithmic Regression Calculator is a mobile application designed to perform **logarithmic regression analysis** for a given set of data points.  
+Users can input paired \( (x, y) \) values, and the app will compute the **best-fit logarithmic equation** of the form:
+
+\[
+y = a \ln x + b
+\]
+
+along with the **correlation coefficient \( r \)**.
 A simple and efficient **logarithmic regression calculator** that allows users to input **data points** and fit a logarithmic regression model.  
 The software provides:
 - 📈 **Logarithmic Regression Calculation** – Fit a logarithmic function to the given dataset.
