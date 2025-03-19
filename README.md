@@ -9,11 +9,6 @@ y = a \ln x + b
 \]
 
 along with the **correlation coefficient \( r \)**.
-A simple and efficient **logarithmic regression calculator** that allows users to input **data points** and fit a logarithmic regression model.  
-The software provides:
-- 📈 **Logarithmic Regression Calculation** – Fit a logarithmic function to the given dataset.
-- ✏️ **Edit Entries** – Modify input data points dynamically.
-- ❌ **Triple-Click Clear** – Remove all data entries instantly with a triple-click.
 
 ## 🚀 Features  
 - 📊 **Logarithmic Curve Fitting** – Computes the best-fit logarithmic equation.
