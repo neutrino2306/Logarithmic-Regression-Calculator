@@ -1,7 +1,5 @@
-﻿# Logarithmic-Regression-Calculator-Software
-....
-# 🎓 Weighted Grade Calculator Software
-
+﻿# Logarithmic-Regression-Calculator
+ 
 ## 📌 Project Overview  
 A simple and efficient **logarithmic regression calculator** that allows users to input **data points** and fit a logarithmic regression model.  
 The software provides:
@@ -19,6 +17,6 @@ The software provides:
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/neutrino2306/Weighted-Grade-Calculator-Software.git
-cd Weighted-Grade-Calculator-Software
+git clone https://github.com/neutrino2306/Logarithmic-Regression-Calculator.git
+cd Logarithmic-Regression-Calculator
 ```
